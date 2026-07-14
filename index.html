@@ -50,6 +50,57 @@ body {
 }
 .header * { pointer-events: auto; }
 
+/* ===== Header Right ===== */
+.header-right {
+  display: flex; flex-direction: column; align-items: flex-end; gap: 4px;
+}
+.clock {
+  font-size: 16px; font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--accent);
+  letter-spacing: 1px;
+}
+
+/* ===== Holiday Bar ===== */
+.holiday-bar {
+  position: fixed; top: 72px; left: 0; right: 0;
+  z-index: 49;
+  padding: 8px 28px;
+  background: rgba(11,14,26,0.88); backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+  display: flex; align-items: center; gap: 12px;
+  font-size: 13px;
+  pointer-events: none;
+}
+.holiday-status {
+  white-space: nowrap; color: var(--text-secondary);
+  font-size: 13px; font-weight: 500;
+}
+.holiday-progress-track {
+  flex: 1; height: 6px;
+  background: var(--surface); border-radius: 3px;
+  overflow: hidden; max-width: 200px;
+}
+.holiday-progress-fill {
+  height: 100%; border-radius: 3px;
+  transition: width 1s ease;
+  background: linear-gradient(90deg, var(--accent3), var(--accent), var(--accent2));
+  width: 0%;
+}
+.holiday-percent {
+  white-space: nowrap; font-weight: 600;
+  color: var(--accent); min-width: 44px;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .holiday-bar { padding: 6px 14px; gap: 8px; font-size: 11px; top: 60px; }
+  .holiday-progress-track { max-width: 120px; }
+  .clock { font-size: 13px; }
+}
+
 /* ===== Legend ===== */
 .legend {
   position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%);
@@ -358,8 +409,19 @@ body {
     <h1>🚗 国庆13天自驾之旅</h1>
     <div class="subtitle">广东 → 广西 → 云南 → 成都 → 重庆 → 深圳</div>
   </div>
-  <div style="font-size:13px;color:var(--text-secondary);pointer-events:auto;cursor:pointer" onclick="location.reload()">🗺️ 地图</div>
+  <div class="header-right">
+    <div class="clock" id="clock">--:--:--</div>
+    <div style="font-size:12px;color:var(--text-secondary);pointer-events:auto;cursor:pointer" onclick="location.reload()">🗺️ 地图</div>
+  </div>
 </header>
+
+<div class="holiday-bar" id="holidayBar">
+  <div class="holiday-status" id="holidayStatus">加载中...</div>
+  <div class="holiday-progress-track">
+    <div class="holiday-progress-fill" id="holidayProgressFill"></div>
+  </div>
+  <div class="holiday-percent" id="holidayPercent"></div>
+</div>
 
 <!-- ===== Map ===== -->
 <div class="map-container">
@@ -1122,6 +1184,55 @@ document.addEventListener('keydown', (e) => {
 
 // ===== Init =====
 renderNodes();
+// ===== Real-time clock & Holiday progress =====
+function updateTimeAndHoliday() {
+  var now = new Date();
+  var bjOpts = { timeZone: 'Asia/Shanghai', hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit' };
+  var timeStr = now.toLocaleTimeString('zh-CN', bjOpts);
+  var dateStr = now.toLocaleDateString('zh-CN', { timeZone: 'Asia/Shanghai', year: 'numeric', month: '2-digit', day: '2-digit', weekday: 'short' });
+  
+  var clock = document.getElementById('clock');
+  if (clock) clock.textContent = dateStr + ' ' + timeStr;
+
+  var holidayStart = new Date('2026-09-25T00:00:00+08:00');
+  var holidayEnd   = new Date('2026-10-07T23:59:59+08:00');
+  var bjNow = new Date(now.toLocaleString('en-US', { timeZone: 'Asia/Shanghai' }));
+  
+  var statusEl = document.getElementById('holidayStatus');
+  var fillEl = document.getElementById('holidayProgressFill');
+  var percentEl = document.getElementById('holidayPercent');
+  if (!statusEl) return;
+
+  var nowTs = bjNow.getTime();
+  var startTs = holidayStart.getTime();
+  var endTs = holidayEnd.getTime();
+  var dayMs = 1000 * 60 * 60 * 24;
+
+  if (nowTs < startTs) {
+    var diffDays = Math.ceil((startTs - nowTs) / dayMs);
+    statusEl.textContent = '\u23F3 \u8DDD\u5047\u671F\u8FD8\u6709 ' + diffDays + ' \u5929';
+    fillEl.style.width = '0%';
+    percentEl.textContent = '';
+  } else if (nowTs <= endTs) {
+    var elapsed = nowTs - startTs;
+    var total = endTs - startTs;
+    var progress = Math.min(100, (elapsed / total) * 100);
+    var dayNum = Math.floor(elapsed / dayMs) + 1;
+    statusEl.textContent = '\uD83C\uDF89 \u5047\u671F\u7B2C ' + dayNum + ' \u5929 / \u517113\u5929';
+    fillEl.style.width = progress + '%';
+    percentEl.textContent = progress.toFixed(1) + '%';
+  } else {
+    var diffDays = Math.floor((nowTs - endTs) / dayMs);
+    statusEl.textContent = '\uD83C\uDFE0 \u5047\u671F\u5DF2\u7ED3\u675F ' + diffDays + ' \u5929';
+    fillEl.style.width = '100%';
+    percentEl.textContent = '100%';
+  }
+}
+updateTimeAndHoliday();
+setInterval(updateTimeAndHoliday, 1000);
 </script>
 </body>
 </html>
+
+
+
