@@ -150,6 +150,11 @@ body {
   z-index: 1;
   pointer-events: none;
 }
+.city-layer {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
 .route-svg {
   position: absolute; inset: 0; width: 100%; height: 100%;
   z-index: 2;
@@ -441,6 +446,173 @@ body {
     <path d="M78.8,61.8L79.6,61.8L80.3,61.5L81.0,61.4L81.9,62.1L82.7,62.0L83.4,61.4L84.2,61.9L84.2,63.1L83.4,63.9L82.8,65.0L82.4,66.1L82.2,67.2L83.1,67.8L83.8,67.4L84.7,67.2L85.5,66.7L86.3,66.6L87.0,66.2L87.7,66.0L88.4,67.1L89.2,67.5L89.2,66.1L90.0,64.8L90.8,65.4L91.6,65.7L92.4,66.0L92.9,67.1L93.9,66.7L94.4,68.0L94.7,69.2L95.0,70.4L95.0,71.8L95.5,73.5L94.8,74.5L94.4,75.7L93.7,75.9L94.4,76.7L93.6,77.4L93.0,78.6L92.1,79.1L91.4,79.4L90.6,79.1L89.9,80.0L89.1,79.7L88.2,79.6L88.3,80.7L87.6,80.9L86.7,80.1L86.0,80.0L85.2,80.4L85.2,81.6L84.5,81.6L84.4,80.5L83.6,80.5L83.2,81.8L82.4,81.6L81.6,81.9L80.7,82.0L80.0,81.2L79.3,80.1L78.8,79.0L78.9,80.0L79.1,81.2L78.2,80.4L78.8,81.6L78.8,82.8L78.9,83.9L78.2,84.5L77.8,83.4L77.6,84.5L76.8,85.4L76.8,84.3L77.1,83.1L76.3,82.6L76.5,83.9L76.2,85.0L76.3,86.2L75.5,86.6L74.8,86.5L74.0,87.4L73.6,86.3L73.3,87.4L72.5,87.9L72.4,86.8L71.6,87.3L71.4,88.4L70.5,88.9L70.6,87.7L69.9,87.4L70.2,88.5L69.4,88.7L68.6,88.7L67.8,89.9L67.0,89.6L66.3,89.9L65.6,90.1L64.8,90.3L64.8,91.5L64.0,91.7L64.2,90.6L63.8,91.7L64.4,92.8L63.6,93.0L62.8,92.3L62.7,93.3L63.4,94.0L63.6,95.1L64.3,96.6L63.9,97.8L63.1,98.1L62.3,98.1L61.5,98.3L61.2,97.1L62.1,97.3L61.3,96.5L60.6,95.4L60.6,94.2L60.4,93.0L60.4,91.8L60.8,90.6L61.5,90.4L60.9,89.3L60.5,88.2L61.4,88.0L61.6,86.9L62.3,86.4L63.0,86.3L63.5,84.9L64.3,84.4L65.0,83.6L65.2,82.5L65.9,81.4L66.6,81.0L67.4,80.3L68.1,79.4L68.6,78.2L68.4,77.0L68.5,75.7L68.9,74.5L69.6,73.5L69.7,72.5L70.5,72.4L71.0,71.2L70.7,70.1L71.5,69.2L71.4,67.9L71.0,66.8L71.8,65.6L72.0,64.3L72.2,63.1L73.0,63.1L73.7,63.2L74.5,63.4L75.0,64.6L75.8,64.8L76.1,63.7L75.7,62.6L76.5,61.6L77.4,60.7L78.2,61.7L78.8,61.8Z" fill="rgba(168,216,234,0.2)" stroke="rgba(168,216,234,0.4)" stroke-width="0.3"/>
     <path d="M55.0,13.0L56.0,13.8L57.0,14.5L57.9,15.3L58.6,16.5L59.5,16.2L60.2,16.2L60.4,17.5L61.4,17.8L62.1,18.5L62.4,19.8L62.4,21.1L62.4,22.3L61.7,22.1L60.7,22.4L59.8,23.8L59.0,24.5L58.2,24.4L57.4,24.0L56.6,24.5L55.6,24.6L54.7,25.1L54.6,26.3L54.9,27.5L54.9,28.6L54.2,29.5L54.5,30.6L55.3,29.7L55.5,30.8L56.4,31.4L56.6,32.5L57.3,32.9L57.6,34.2L58.5,35.3L58.2,36.4L58.5,37.5L58.6,38.6L57.8,39.9L57.6,41.0L56.8,41.4L56.1,41.3L55.9,39.7L55.1,40.3L55.1,39.2L55.0,38.1L54.0,38.2L53.9,36.9L53.8,35.8L52.9,35.2L52.2,35.4L51.4,35.7L51.2,34.5L50.4,34.5L49.7,34.3L49.4,35.5L49.6,36.6L48.8,37.3L48.1,36.4L47.2,37.2L46.8,38.5L46.0,39.4L45.9,38.3L45.3,37.1L45.2,38.4L44.4,39.0L44.3,37.6L43.7,36.5L42.9,36.2L42.1,36.4L41.6,35.3L41.5,33.9L40.6,33.8L40.0,32.5L39.8,31.3L40.5,30.6L41.5,29.8L41.7,28.7L40.9,27.7L41.2,26.6L41.9,25.5L42.7,26.0L43.5,26.3L44.2,27.2L45.1,26.5L45.8,26.6L46.1,27.8L47.0,28.3L47.9,28.2L48.7,26.9L49.2,25.6L49.7,24.5L49.7,23.3L50.5,22.5L51.2,22.6L52.0,22.5L52.3,21.4L52.7,20.3L53.2,19.2L53.3,18.0L54.2,17.4L54.9,16.3L54.1,15.5L54.1,14.3L54.2,13.0L55.0,13.0Z" fill="rgba(245,198,198,0.2)" stroke="rgba(245,198,198,0.4)" stroke-width="0.3"/>
     <path d="M3.5,-0.0L4.4,0.7L5.5,0.3L6.2,0.7L7.0,1.0L7.8,2.0L8.2,3.4L8.6,4.8L9.2,6.2L10.0,6.6L10.7,7.2L11.4,8.3L12.2,9.2L13.0,9.2L13.7,9.3L14.2,8.1L14.9,8.7L15.1,9.9L16.0,9.1L16.7,9.3L16.8,10.5L17.8,9.9L18.6,9.7L19.6,9.4L20.3,8.9L19.6,7.7L19.8,6.4L20.8,6.0L21.7,6.1L22.6,5.4L22.5,4.1L22.9,3.0L23.6,4.5L23.2,5.8L24.1,5.6L24.8,5.4L25.3,4.2L26.1,4.0L25.6,2.8L25.3,1.7L24.5,0.4L25.3,0.0L26.0,-0.7L26.9,-0.5L27.3,-1.7L28.1,-2.0L28.8,-1.3L29.3,-0.1L29.5,1.0L30.4,1.8L31.2,2.3L31.9,2.3L32.9,2.3L33.6,2.3L34.2,3.4L34.9,4.8L35.2,6.4L35.2,7.6L35.3,8.7L36.1,9.1L36.9,9.8L37.7,10.1L38.6,10.0L39.4,9.7L40.2,9.0L40.2,7.8L40.8,9.2L41.6,9.0L42.4,8.4L43.2,8.2L43.9,9.4L44.8,9.8L45.5,9.5L46.3,9.1L47.9,9.2L47.8,10.5L48.7,11.3L49.5,10.4L49.7,11.5L50.7,11.5L51.3,12.6L52.2,13.2L52.9,12.7L53.6,12.3L54.5,12.4L54.4,13.6L53.6,14.5L54.3,15.6L54.8,16.9L54.0,17.6L53.2,18.7L52.6,20.0L52.5,21.2L52.1,22.3L51.3,22.8L50.5,22.5L49.7,23.3L49.7,24.5L49.2,25.6L48.7,26.9L48.0,27.9L47.2,28.3L46.4,28.2L45.9,27.1L45.1,26.5L44.2,27.2L43.5,26.3L42.7,26.0L41.9,25.5L41.6,26.6L40.7,27.1L41.4,28.2L41.5,29.4L40.8,30.4L39.9,31.1L40.1,32.3L40.1,33.4L40.8,33.8L41.6,35.3L42.1,36.4L42.8,36.1L43.5,36.4L44.3,37.6L44.4,38.7L43.7,38.4L42.9,37.7L41.9,38.5L41.1,39.2L41.1,40.4L41.9,40.7L42.3,41.8L43.3,41.9L44.1,42.1L44.4,43.3L44.3,44.5L43.5,44.5L42.7,44.8L42.0,44.8L41.2,45.0L40.4,44.5L39.4,44.9L39.3,43.7L38.9,42.6L38.1,42.2L37.6,43.6L36.9,43.7L36.0,43.9L35.2,43.2L35.5,42.1L35.3,40.9L34.7,39.5L35.4,38.3L34.6,38.2L33.6,38.4L32.8,38.3L32.6,39.5L32.7,40.7L32.0,41.3L31.1,41.6L31.0,42.8L31.1,43.9L30.4,44.8L29.8,45.9L28.9,47.1L28.2,47.9L28.2,49.5L28.1,50.7L28.5,51.9L28.7,53.0L28.6,54.1L27.7,55.0L26.8,55.4L26.0,55.0L25.2,55.5L24.4,56.6L23.7,56.3L22.9,56.4L21.9,55.4L22.1,54.0L21.3,53.4L21.5,51.8L20.5,50.6L19.9,48.9L19.3,47.7L18.5,46.8L18.4,45.5L17.8,44.2L16.8,44.2L16.1,44.7L15.2,43.5L14.6,42.3L15.2,41.0L14.5,39.8L14.2,38.6L13.3,37.7L12.6,37.2L12.2,38.5L11.4,39.2L11.5,40.4L11.3,41.6L10.7,40.2L10.6,39.0L10.3,37.5L10.3,36.3L10.3,34.9L10.0,33.7L10.0,32.6L9.7,31.4L9.8,30.2L10.0,29.0L9.8,27.9L9.5,26.7L9.5,25.3L9.4,24.2L9.5,23.1L8.7,22.2L8.4,21.1L7.8,19.9L8.6,19.4L8.7,18.2L7.7,17.0L7.0,15.8L6.9,14.4L6.2,13.1L5.8,11.8L5.1,11.3L4.2,10.8L3.3,10.1L2.3,9.1L1.9,8.0L2.6,7.2L2.6,5.8L3.3,4.5L2.4,3.1L2.1,1.8L3.2,0.7L3.5,-0.0Z" fill="rgba(248,224,181,0.2)" stroke="rgba(248,224,181,0.4)" stroke-width="0.3"/>
+  </svg>
+  <!-- City labels -->
+  <svg class="city-layer" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <circle cx="77.4" cy="77.6" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="78.2" y="77.89999999999999" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">广州</text>
+    <circle cx="81.3" cy="81.8" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="82.1" y="82.1" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">深圳</text>
+    <circle cx="78.9" cy="83.8" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="79.7" y="84.1" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">珠海</text>
+    <circle cx="76.8" cy="78.4" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="77.6" y="78.7" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">佛山</text>
+    <circle cx="79.8" cy="78.2" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="80.6" y="78.5" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">东莞</text>
+    <circle cx="78.0" cy="82.0" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="78.8" y="82.3" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">中山</text>
+    <circle cx="83.0" cy="78.0" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="83.8" y="78.3" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">惠州</text>
+    <circle cx="93.8" cy="75.9" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="94.6" y="76.2" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">汕头</text>
+    <circle cx="63.6" cy="90.9" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="64.4" y="91.2" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">湛江</text>
+    <circle cx="73.7" cy="78.2" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="74.5" y="78.5" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">肇庆</text>
+    <circle cx="76.6" cy="81.6" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="77.39999999999999" y="81.89999999999999" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">江门</text>
+    <circle cx="66.3" cy="88.1" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="67.1" y="88.39999999999999" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">茂名</text>
+    <circle cx="79.0" cy="65.6" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="79.8" y="65.89999999999999" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">韶关</text>
+    <circle cx="91.0" cy="69.3" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="91.8" y="69.6" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">梅州</text>
+    <circle cx="87.5" cy="80.1" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="88.3" y="80.39999999999999" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">汕尾</text>
+    <circle cx="84.3" cy="73.4" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="85.1" y="73.7" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">河源</text>
+    <circle cx="71.3" cy="86.6" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="72.1" y="86.89999999999999" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">阳江</text>
+    <circle cx="76.3" cy="73.6" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="77.1" y="73.89999999999999" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">清远</text>
+    <circle cx="93.5" cy="73.8" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="94.3" y="74.1" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">潮州</text>
+    <circle cx="92.2" cy="74.6" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="93.0" y="74.89999999999999" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">揭阳</text>
+    <circle cx="71.6" cy="79.1" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="72.39999999999999" y="79.39999999999999" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">云浮</text>
+    <circle cx="54.1" cy="79.9" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="54.9" y="80.2" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">南宁</text>
+    <circle cx="63.2" cy="62.3" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="64.0" y="62.599999999999994" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">桂林</text>
+    <circle cx="59.1" cy="69.1" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="59.9" y="69.39999999999999" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">柳州</text>
+    <circle cx="57.7" cy="89.4" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="58.5" y="89.7" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">北海</text>
+    <circle cx="49.4" cy="83.0" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="50.199999999999996" y="83.3" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">崇左</text>
+    <circle cx="45.8" cy="72.1" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="46.599999999999994" y="72.39999999999999" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">百色</text>
+    <circle cx="52.7" cy="66.4" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="53.5" y="66.7" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">河池</text>
+    <circle cx="68.1" cy="75.1" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="68.89999999999999" y="75.39999999999999" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">梧州</text>
+    <circle cx="62.7" cy="81.2" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="63.5" y="81.5" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">玉林</text>
+    <circle cx="55.3" cy="86.1" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="56.099999999999994" y="86.39999999999999" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">钦州</text>
+    <circle cx="54.0" cy="88.0" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="54.8" y="88.3" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">防城港</text>
+    <circle cx="60.0" cy="77.9" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="60.8" y="78.2" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">贵港</text>
+    <circle cx="69.3" cy="68.6" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="70.1" y="68.89999999999999" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">贺州</text>
+    <circle cx="58.2" cy="73.4" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="59.0" y="73.7" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">来宾</text>
+    <circle cx="27.2" cy="63.9" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="28.0" y="64.2" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">昆明</text>
+    <circle cx="15.4" cy="60.0" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="16.2" y="60.3" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">大理</text>
+    <circle cx="15.4" cy="50.9" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="16.2" y="51.199999999999996" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">丽江</text>
+    <circle cx="18.1" cy="85.7" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="18.900000000000002" y="86.0" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">景洪</text>
+    <circle cx="7.1" cy="64.1" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="7.8999999999999995" y="64.39999999999999" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">腾冲</text>
+    <circle cx="26.4" cy="68.9" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="27.2" y="69.2" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">玉溪</text>
+    <circle cx="32.4" cy="60.7" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="33.199999999999996" y="61.0" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">曲靖</text>
+    <circle cx="30.5" cy="75.9" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="31.3" y="76.2" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">蒙自</text>
+    <circle cx="21.7" cy="64.1" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="22.5" y="64.39999999999999" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">楚雄</text>
+    <circle cx="34.5" cy="75.9" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="35.3" y="76.2" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">文山</text>
+    <circle cx="18.9" cy="80.1" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="19.7" y="80.39999999999999" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">普洱</text>
+    <circle cx="32.0" cy="47.6" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="32.8" y="47.9" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">昭通</text>
+    <circle cx="14.7" cy="72.3" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="15.5" y="72.6" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">临沧</text>
+    <circle cx="7.5" cy="68.4" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="8.3" y="68.7" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">芒市</text>
+    <circle cx="8.8" cy="58.2" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="9.600000000000001" y="58.5" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">泸水</text>
+    <circle cx="12.9" cy="44.1" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="13.700000000000001" y="44.4" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">香格里拉</text>
+    <circle cx="45.9" cy="52.5" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="46.699999999999996" y="52.8" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">贵阳</text>
+    <circle cx="47.3" cy="44.9" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="48.099999999999994" y="45.199999999999996" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">遵义</text>
+    <circle cx="37.4" cy="53.0" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="38.199999999999996" y="53.3" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">六盘水</text>
+    <circle cx="42.6" cy="55.4" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="43.4" y="55.699999999999996" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">安顺</text>
+    <circle cx="39.4" cy="47.9" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="40.199999999999996" y="48.199999999999996" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">毕节</text>
+    <circle cx="58.0" cy="44.9" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="58.8" y="45.199999999999996" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">铜仁</text>
+    <circle cx="52.2" cy="53.0" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="53.0" y="53.3" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">凯里</text>
+    <circle cx="50.1" cy="55.2" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="50.9" y="55.5" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">都匀</text>
+    <circle cx="37.6" cy="63.6" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="38.4" y="63.9" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">兴义</text>
+    <circle cx="33.7" cy="24.4" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="34.5" y="24.7" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">成都</text>
+    <circle cx="36.9" cy="18.1" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="37.699999999999996" y="18.400000000000002" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">绵阳</text>
+    <circle cx="35.2" cy="20.5" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="36.0" y="20.8" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">德阳</text>
+    <circle cx="36.3" cy="37.4" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="37.099999999999994" y="37.699999999999996" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">宜宾</text>
+    <circle cx="43.3" cy="23.0" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="44.099999999999994" y="23.3" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">南充</text>
+    <circle cx="40.1" cy="36.6" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="40.9" y="36.9" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">泸州</text>
+    <circle cx="32.0" cy="31.6" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="32.8" y="31.900000000000002" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">乐山</text>
+    <circle cx="37.0" cy="33.2" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="37.8" y="33.5" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">自贡</text>
+    <circle cx="50.0" cy="19.9" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="50.8" y="20.2" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">达州</text>
+    <circle cx="38.3" cy="31.6" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="39.099999999999994" y="31.900000000000002" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">内江</text>
+    <circle cx="40.8" cy="24.9" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="41.599999999999994" y="25.2" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">遂宁</text>
+    <circle cx="45.9" cy="25.2" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="46.699999999999996" y="25.5" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">广安</text>
+    <circle cx="32.5" cy="28.2" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="33.3" y="28.5" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">眉山</text>
+    <circle cx="42.0" cy="11.2" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="42.8" y="11.5" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">广元</text>
+    <circle cx="46.5" cy="15.4" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="47.3" y="15.700000000000001" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">巴中</text>
+    <circle cx="28.6" cy="28.6" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="29.400000000000002" y="28.900000000000002" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">雅安</text>
+    <circle cx="36.3" cy="27.7" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="37.099999999999994" y="28.0" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">资阳</text>
+    <circle cx="25.1" cy="43.6" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="25.900000000000002" y="43.9" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">西昌</text>
+    <circle cx="22.5" cy="53.2" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="23.3" y="53.5" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">攀枝花</text>
+    <circle cx="23.7" cy="28.2" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="24.5" y="28.5" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">康定</text>
+    <circle cx="24.9" cy="15.0" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="25.7" y="15.3" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">马尔康</text>
+    <circle cx="45.5" cy="31.6" r="0.5" fill="#4a90d9" opacity="0.7"/>
+    <text x="46.3" y="31.900000000000002" fill="rgba(255,255,255,0.6)" font-size="1.2" font-family="sans-serif">重庆</text>
   </svg>
   <!-- SVG Route -->
   <svg class="route-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
