@@ -469,528 +469,363 @@ body {
 <script>
 const days = [
   {
-    day: 1, date: '10月1日', emoji: '🚗',
-    title: '深圳 → 桂林',
-    subtitle: '出发！跨越岭南',
-    pos: { x: 78, y: 78 },
+    day: 1,
+    dates: '9.24-9.25',
+    emoji: '🚗',
+    title: '广州出发 → 崇左',
+    subtitle: '夜行千里，直抵边关',
+    pos: { x: 85, y: 82 },
     size: 'key',
     routeStop: true,
     images: ['https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Guilin_landscape.jpg/960px-Guilin_landscape.jpg'],
     sections: {
-      drive: {
-        icon: '🚗',
-        items: [
-          { title: '行程概览', desc: '深圳出发 → 经广昆高速、包茂高速 → 桂林市区' },
-          { title: '里程 & 时间', desc: '全程约 630km，预计 7 小时（含服务区休息）' },
-          { title: '路线亮点', desc: '沿途穿越粤北山区，风景从城市渐变为喀斯特地貌' }
-        ]
-      },
-      hotel: {
-        icon: '🏨',
-        items: [
-          { title: '推荐住宿', desc: '桂林漓江大瀑布酒店 · 中心景观房' },
-          { title: '备选', desc: '桂林香格里拉大酒店 · 漓江畔' }
-        ]
-      },
-      food: {
-        icon: '🍜',
-        items: [
-          { title: '晚餐', desc: '桂林米粉（老字号推荐：崇善米粉）' },
-          { title: '宵夜', desc: '啤酒鱼 · 油茶 · 田螺' }
-        ]
-      },
-      play: {
-        icon: '🎯',
-        items: [
-          { title: '晚上', desc: '夜游两江四湖 · 东西巷历史文化街区漫步' }
-        ]
-      }
+    drive: {
+      icon: '🚗',
+      items: [
+        { title: '9.24', desc: '广州白云 → 吃饭 (23:00出发)' },{ title: '9.25', desc: '广州白云 → 广西崇左 (1:00出发) | 里程：722km/8.5h | 预计抵达：11:00' },{ title: '9.26', desc: '崇左 → 越南一日游 (白天出发)' }
+      ]
+    },
+    play: {
+      icon: '🎯',
+      items: [
+        { title: '9.24', desc: `出发前聚餐，吃饭不喝酒` },{ title: '9.25', desc: `抵达崇左入住桔子酒店，休息。晚起后逛螺香街，品尝泰式烤牛肉、屈头蛋、越南糕、卷筒粉、酸粥鱼等。喝大酒（广西公文包/漓泉啤酒）` },{ title: '9.26', desc: `抱团去凉山(友谊关)→蓝洞咖啡→德天瀑布/三叠岭瀑布，晚七点前出发` }
+      ]
+    },
+    food: {
+      icon: '🍜',
+      items: [
+        { title: '9.24', desc: `吃饭不喝酒` },{ title: '9.25', desc: `抵达崇左入住桔子酒店；品尝泰式烤牛肉、屈头蛋、越南糕、卷筒粉、酸粥鱼等。喝大酒（广西公文包/漓泉啤酒）` }
+      ]
+    }
     }
   },
   {
-    day: 2, date: '10月2日', emoji: '🛶',
-    title: '桂林 · 阳朔',
-    subtitle: '山水甲天下',
-    pos: { x: 63, y: 60 },
-    size: '',
-    routeStop: true,
-    images: ['https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/1_aerial_yangshuo_panorama_2017.jpg/960px-1_aerial_yangshuo_panorama_2017.jpg'],
-    sections: {
-      drive: {
-        icon: '🚗',
-        items: [
-          { title: '行程', desc: '桂林 → 阳朔，约 65km，1 小时车程' },
-          { title: '停车', desc: '建议停放在酒店，阳朔县城内租电动车游览' }
-        ]
-      },
-      hotel: {
-        icon: '🏨',
-        items: [
-          { title: '推荐住宿', desc: '阳朔糖舍（老糖厂改造，设计酒店天花板）' },
-          { title: '备选', desc: '阳朔悦榕庄 · 漓江畔' }
-        ]
-      },
-      food: {
-        icon: '🍜',
-        items: [
-          { title: '午餐', desc: '阳朔啤酒鱼（大师傅啤酒鱼）' },
-          { title: '晚餐', desc: '田螺酿 · 荔浦芋扣肉 · 桂花糕' }
-        ]
-      },
-      play: {
-        icon: '🎯',
-        items: [
-          { title: '上午', desc: '漓江竹筏漂流（杨堤—兴坪段，看20元人民币背景）' },
-          { title: '下午', desc: '十里画廊骑行 · 月亮山' },
-          { title: '晚上', desc: '西街夜市 · 泡吧听民谣' }
-        ]
-      }
-    }
-  },
-  {
-    day: 3, date: '10月3日', emoji: '🛣️',
-    title: '阳朔 → 昆明',
-    subtitle: '穿越广西至春城',
-    pos: { x: 42, y: 58 },
+    day: 2,
+    dates: '9.26',
+    emoji: '🛣️',
+    title: '崇左 → 玉溪',
+    subtitle: '穿行云岭之间',
+    pos: { x: 68, y: 72 },
     size: '',
     routeStop: true,
     images: ['https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Terrace_field_yunnan_china_denoised.jpg/960px-Terrace_field_yunnan_china_denoised.jpg'],
     sections: {
-      drive: {
-        icon: '🚗',
-        items: [
-          { title: '行程概览', desc: '阳朔 → 南宁（绕城而过） → 昆明' },
-          { title: '里程 & 时间', desc: '约 900km，预计 10-11 小时（含休息就餐）' },
-          { title: '提示', desc: '今日车程较长，建议两人轮换驾驶，备好零食和充电宝' }
-        ]
-      },
-      hotel: {
-        icon: '🏨',
-        items: [
-          { title: '推荐住宿', desc: '昆明翠湖宾馆 · 翠湖公园旁' },
-          { title: '备选', desc: '昆明洲际酒店' }
-        ]
-      },
-      food: {
-        icon: '🍜',
-        items: [
-          { title: '晚餐', desc: '过桥米线（推荐：建新园/桥香园）' },
-          { title: '宵夜', desc: '云南野生菌火锅（雨季刚过，菌子正鲜）' }
-        ]
-      },
-      play: {
-        icon: '🎯',
-        items: [
-          { title: '晚上', desc: '南屏步行街逛逛 · 感受春城夜生活' }
-        ]
-      }
+    drive: {
+      icon: '🚗',
+      items: [
+        { title: '9.26', desc: '崇左/曲靖 → 玉溪 (19:00出发) | 里程：587km/6.5h | 预计抵达：2:00' }
+      ]
+    },
+    play: {
+      icon: '🎯',
+      items: [
+        { title: '9.26', desc: `夜间行车，两点到达直接睡觉，上午十点起` }
+      ]
+    }
     }
   },
   {
-    day: 4, date: '10月4日', emoji: '🌸',
-    title: '昆明',
-    subtitle: '春城花海慢生活',
-    pos: { x: 22, y: 56 },
-    size: 'key',
+    day: 3,
+    dates: '9.27',
+    emoji: '🏔️',
+    title: '玉溪 → 哀牢山',
+    subtitle: '秘境探幽',
+    pos: { x: 52, y: 65 },
+    size: '',
+    routeStop: true,
+    images: ['https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Panda_eating_bamboo_in_Panda_Base.jpg/960px-Panda_eating_bamboo_in_Panda_Base.jpg'],
+    sections: {
+    drive: {
+      icon: '🚗',
+      items: [
+        { title: '9.27', desc: '云南玉溪 → 哀牢山 (10:00出发) | 里程：175km/2.5h | 预计抵达：13:00' }
+      ]
+    },
+    play: {
+      icon: '🎯',
+      items: [
+        { title: '9.27', desc: `烟民购置红塔山。可顺游抚仙湖景区、聂耳故居。自驾哀牢山约4h，需自带食物。特色鳝鱼米线。门票40元，观光车30元` }
+      ]
+    },
+    food: {
+      icon: '🍜',
+      items: [
+        { title: '9.27', desc: `需自带食物。特色鳝鱼米线。门票40元` }
+      ]
+    }
+    }
+  },
+  {
+    day: 4,
+    dates: '9.27',
+    emoji: '🌴',
+    title: '哀牢山 → 西双版纳',
+    subtitle: '雨林之夜',
+    pos: { x: 35, y: 80 },
+    size: '',
     routeStop: true,
     images: ['https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/55526-Kunming-Green-Lake-Park.jpg/960px-55526-Kunming-Green-Lake-Park.jpg'],
     sections: {
-      drive: {
-        icon: '🚗',
-        items: [
-          { title: '今日无长途', desc: '昆明市区游览，推荐打车+地铁，轻松出行' }
-        ]
-      },
-      hotel: {
-        icon: '🏨',
-        items: [
-          { title: '续住', desc: '昆明翠湖宾馆 或 昆明洲际酒店' }
-        ]
-      },
-      food: {
-        icon: '🍜',
-        items: [
-          { title: '早餐', desc: '豆花米线 · 烧饵块' },
-          { title: '午餐', desc: '汽锅鸡（推荐：福照楼）' },
-          { title: '晚餐', desc: '炸洋芋 · 烤乳扇 · 泡鲁达' }
-        ]
-      },
-      play: {
-        icon: '🎯',
-        items: [
-          { title: '上午', desc: '滇池海埂公园 · 喂红嘴鸥（如果到了的话）' },
-          { title: '下午', desc: '翠湖公园 · 云南大学（银杏道）' },
-          { title: '傍晚', desc: '金马碧鸡坊 · 昆明老街' }
-        ]
-      }
+    drive: {
+      icon: '🚗',
+      items: [
+        { title: '9.27-9.28', desc: '哀牢山 → 西双版纳 (19:00出发) | 里程：407km/5.5h | 预计抵达：0:00' }
+      ]
+    },
+    play: {
+      icon: '🎯',
+      items: [
+        { title: '9.27-9.28', desc: `到达版纳喝酒睡觉。可逛滨江周边、星光夜市。美食推荐：耳豆汤、撒撇米线、孔雀宴、普洱茶` }
+      ]
+    },
+    food: {
+      icon: '🍜',
+      items: [
+        { title: '9.27-9.28', desc: `到达版纳喝酒睡觉。可逛滨江周边、星光夜市。美食推荐：耳豆汤、撒撇米线、孔雀宴、普洱茶` }
+      ]
+    }
     }
   },
   {
-    day: 5, date: '10月5日', emoji: '🏔️',
-    title: '昆明 → 大理',
-    subtitle: '风花雪月之旅',
-    pos: { x: 12, y: 47 },
+    day: 5,
+    dates: '9.28',
+    emoji: '🐘',
+    title: '西双版纳',
+    subtitle: '热带风情',
+    pos: { x: 25, y: 86 },
     size: '',
+    routeStop: true,
+    images: ['https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/1_aerial_yangshuo_panorama_2017.jpg/960px-1_aerial_yangshuo_panorama_2017.jpg'],
+    sections: {
+    drive: {
+      icon: '🚗',
+      items: [
+        { title: '9.28', desc: '西双版纳 → 景洪 (14:00出发)' }
+      ]
+    },
+    play: {
+      icon: '🎯',
+      items: [
+        { title: '9.28', desc: `逛景洪农贸市场、野象谷（门票58元），下午七点出发` }
+      ]
+    }
+    }
+  },
+  {
+    day: 6,
+    dates: '9.28-9.29',
+    emoji: '🌋',
+    title: '版纳 → 保山 → 腾冲',
+    subtitle: '翻越高黎贡',
+    pos: { x: 18, y: 58 },
+    size: 'key',
     routeStop: true,
     images: ['https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Dali_Yunnan_China_Chongsheng-Temple-03.jpg/960px-Dali_Yunnan_China_Chongsheng-Temple-03.jpg'],
     sections: {
-      drive: {
-        icon: '🚗',
-        items: [
-          { title: '行程', desc: '昆明 → 杭瑞高速 → 大理古城' },
-          { title: '里程 & 时间', desc: '约 330km，预计 4 小时' },
-          { title: '沿途', desc: '可途经楚雄，感受彝族风情' }
-        ]
-      },
-      hotel: {
-        icon: '🏨',
-        items: [
-          { title: '推荐住宿', desc: '大理古城·特色民宿（推荐：既下山）' },
-          { title: '备选', desc: '大理洱海天域酒店 · 海景房' }
-        ]
-      },
-      food: {
-        icon: '🍜',
-        items: [
-          { title: '午餐', desc: '大理酸辣鱼 · 永平黄焖鸡' },
-          { title: '晚餐', desc: '乳扇 · 耙肉饵丝 · 大理啤酒' }
-        ]
-      },
-      play: {
-        icon: '🎯',
-        items: [
-          { title: '下午', desc: '抵达后逛大理古城 · 洋人街 · 远眺苍山' },
-          { title: '晚上', desc: '古城人民路夜市 · 听民谣' }
-        ]
-      }
+    drive: {
+      icon: '🚗',
+      items: [
+        { title: '9.28晚', desc: '西双版纳 → 保山 (19:00出发) | 里程：663km/8.5h | 预计抵达：次日' },{ title: '9.29', desc: '保山 → 腾冲 (12:00出发) | 里程：226km/4h | 预计抵达：19:00' }
+      ]
+    },
+    play: {
+      icon: '🎯',
+      items: [
+        { title: '9.28晚', desc: `住水会（太阳风温泉/青华兰汤/水云轩，均价180/人）` },{ title: '9.29', desc: `途经松山战役遗址-猴桥口岸-国殇墓园-热海景区-和顺古镇。住集美花园温泉民宿(345.7元)。美食：烧肉米线、铜瓢牛肉、牛干巴、菌子火锅` }
+      ]
+    },
+    food: {
+      icon: '🍜',
+      items: [
+        { title: '9.29', desc: `途经松山战役遗址-猴桥口岸-国殇墓园-热海景区-和顺古镇。住集美花园温泉民宿(345.7元)。美食：烧肉米线、铜瓢牛肉、牛干巴、菌子火锅` }
+      ]
+    }
     }
   },
   {
-    day: 6, date: '10月6日', emoji: '🌊',
-    title: '大理 · 洱海',
-    subtitle: '环海一日，风月无边',
-    pos: { x: 8, y: 42 },
-    size: '',
-    routeStop: true,
-    images: ['https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Erhai_north_Panorama.jpg/960px-Erhai_north_Panorama.jpg'],
-    sections: {
-      drive: {
-        icon: '🚗',
-        items: [
-          { title: '行程', desc: '环洱海自驾，全程约 120km' },
-          { title: '路线', desc: '古城 → 喜洲古镇 → 双廊 → 小普陀 → 挖色 → 古城' },
-          { title: '贴士', desc: '沿途风景极美，随时停车拍照' }
-        ]
-      },
-      hotel: {
-        icon: '🏨',
-        items: [
-          { title: '推荐住宿', desc: '双廊·海景客栈（推荐：明月松间）' },
-          { title: '备选', desc: '大理古城民宿续住' }
-        ]
-      },
-      food: {
-        icon: '🍜',
-        items: [
-          { title: '早餐', desc: '喜洲粑粑 · 烤乳扇' },
-          { title: '午餐', desc: '双廊·砂锅鱼 · 海菜花' },
-          { title: '晚餐', desc: '白族三道菜 · 雕梅酒' }
-        ]
-      },
-      play: {
-        icon: '🎯',
-        items: [
-          { title: '上午', desc: '喜洲古镇（白族民居 · 转角楼 · 稻田）' },
-          { title: '中午', desc: '双廊古镇 · 玉几岛 · 杨丽萍太阳宫' },
-          { title: '下午', desc: '小普陀 · 挖色码头 · 环海东路' },
-          { title: '傍晚', desc: '崇圣寺三塔 · 三塔倒影' }
-        ]
-      }
-    }
-  },
-  {
-    day: 7, date: '10月7日', emoji: '🏘️',
-    title: '大理 → 丽江',
-    subtitle: '艳遇古城，遇见自己',
-    pos: { x: 10, y: 34 },
+    day: 7,
+    dates: '9.30',
+    emoji: '🏘️',
+    title: '腾冲 → 丽江',
+    subtitle: '奔赴古城',
+    pos: { x: 15, y: 38 },
     size: '',
     routeStop: true,
     images: ['https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Lijiang_Ancient_City_%284336169958%29.jpg/960px-Lijiang_Ancient_City_%284336169958%29.jpg'],
     sections: {
-      drive: {
-        icon: '🚗',
-        items: [
-          { title: '行程', desc: '大理 → 大丽高速 → 丽江古城' },
-          { title: '里程 & 时间', desc: '约 160km，2.5 小时' }
-        ]
-      },
-      hotel: {
-        icon: '🏨',
-        items: [
-          { title: '推荐住宿', desc: '丽江古城·四方街附近特色客栈' },
-          { title: '备选', desc: '丽江和府洲际酒店' }
-        ]
-      },
-      food: {
-        icon: '🍜',
-        items: [
-          { title: '午餐', desc: '丽江腊排骨火锅' },
-          { title: '晚餐', desc: '鸡豆凉粉 · 米灌肠 · 纳西烤鱼' }
-        ]
-      },
-      play: {
-        icon: '🎯',
-        items: [
-          { title: '下午', desc: '丽江古城漫步 · 大水车 · 四方街' },
-          { title: '傍晚', desc: '狮子山万古楼 · 古城全景日落' },
-          { title: '晚上', desc: '酒吧街 · 听纳西古乐' }
-        ]
-      }
+    drive: {
+      icon: '🚗',
+      items: [
+        { title: '9.30', desc: '腾冲 → 丽江 (12:00出发) | 里程：500km/6h | 预计抵达：18:00' }
+      ]
+    },
+    play: {
+      icon: '🎯',
+      items: [
+        { title: '9.30', desc: `丽江古城漫步，微微喝点，第二天早起出发去泸沽湖。住汉庭丽江古城大水车(403元)` }
+      ]
+    },
+    food: {
+      icon: '🍜',
+      items: [
+        { title: '9.30', desc: `微微喝点` }
+      ]
+    }
     }
   },
   {
-    day: 8, date: '10月8日', emoji: '❄️',
-    title: '丽江 · 玉龙雪山',
-    subtitle: '挑战4680米',
-    pos: { x: 12, y: 27 },
-    size: 'key',
+    day: 8,
+    dates: '10.1',
+    emoji: '🌊',
+    title: '丽江 → 泸沽湖 → 乐山',
+    subtitle: '女儿国到美食城',
+    pos: { x: 22, y: 28 },
+    size: '',
+    routeStop: true,
+    images: ['https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Erhai_north_Panorama.jpg/960px-Erhai_north_Panorama.jpg'],
+    sections: {
+    drive: {
+      icon: '🚗',
+      items: [
+        { title: '10.1', desc: '丽江 → 泸沽湖 (8:00出发) | 里程：223km/3h | 预计抵达：11:00' },{ title: '10.1', desc: '泸沽湖 → 乐山 (11:00出发) | 里程：594km/9.5h | 预计抵达：22:00' }
+      ]
+    },
+    play: {
+      icon: '🎯',
+      items: [
+        { title: '10.1', desc: `游玩泸沽湖，需提前购门票` },{ title: '10.1', desc: `乐山入住，喝酒！品尝跷脚牛肉、甜皮鸭、钵钵鸡、豆腐脑。住蒙特雷斯酒店(449元)` }
+      ]
+    },
+    food: {
+      icon: '🍜',
+      items: [
+        { title: '10.1', desc: `喝酒！品尝跷脚牛肉、甜皮鸭、钵钵鸡、豆腐脑。住蒙特雷斯酒店(449元)` }
+      ]
+    }
+    }
+  },
+  {
+    day: 9,
+    dates: '10.2',
+    emoji: '🏯',
+    title: '乐山 → 峨眉 → 成都',
+    subtitle: '佛国到天府',
+    pos: { x: 42, y: 24 },
+    size: '',
     routeStop: true,
     images: ['https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Lijiang_Yunnan_China_Jade-Dragon-Snow-Mountain-01.jpg/960px-Lijiang_Yunnan_China_Jade-Dragon-Snow-Mountain-01.jpg'],
     sections: {
-      drive: {
-        icon: '🚗',
-        items: [
-          { title: '行程', desc: '丽江古城 → 玉龙雪山景区，约 30km，40 分钟' },
-          { title: '停车', desc: '景区有大型停车场，建议早8点前出发' }
-        ]
-      },
-      hotel: {
-        icon: '🏨',
-        items: [
-          { title: '推荐住宿', desc: '丽江金茂璞修雪山酒店 · 推窗见雪山' },
-          { title: '备选', desc: '续住丽江古城客栈' }
-        ]
-      },
-      food: {
-        icon: '🍜',
-        items: [
-          { title: '午餐', desc: '景区内简餐 / 自带干粮' },
-          { title: '晚餐', desc: '纳西风味·牦牛火锅 · 东巴烤肉' }
-        ]
-      },
-      play: {
-        icon: '🎯',
-        items: [
-          { title: '上午', desc: '玉龙雪山·大索道 → 冰川公园（4680m）' },
-          { title: '下午', desc: '蓝月谷（小九寨） · 云杉坪' },
-          { title: '傍晚', desc: '束河古镇 · 更安静更有味道' }
-        ]
-      }
+    drive: {
+      icon: '🚗',
+      items: [
+        { title: '10.2', desc: '乐山 → 峨眉山 (11:00出发) | 里程：40km/1h | 预计抵达：17:00' },{ title: '10.2', desc: '峨眉山 → 成都 (17:00出发) | 里程：202km/3h | 预计抵达：20:00' }
+      ]
+    },
+    play: {
+      icon: '🎯',
+      items: [
+        { title: '10.2', desc: `乐山大佛1h，峨眉山5h，需提前购门票` },{ title: '10.2', desc: `入住汉庭成都武侯祠店，喝大酒，川菜火锅！` }
+      ]
+    },
+    food: {
+      icon: '🍜',
+      items: [
+        { title: '10.2', desc: `喝大酒；川菜火锅！` }
+      ]
+    }
     }
   },
   {
-    day: 9, date: '10月9日', emoji: '✈️',
-    title: '丽江 → 成都',
-    subtitle: '飞往天府之国',
-    pos: { x: 38, y: 18 },
-    size: '',
+    day: 10,
+    dates: '10.3-10.4',
+    emoji: '🐼',
+    title: '成都',
+    subtitle: '慢生活·喝大酒',
+    pos: { x: 48, y: 16 },
+    size: 'key',
     routeStop: true,
     images: ['https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Chengdu_Sichuan_China_Du-Fu-Thatched-Cottage-Park-02.jpg/960px-Chengdu_Sichuan_China_Du-Fu-Thatched-Cottage-Park-02.jpg'],
     sections: {
-      drive: {
-        icon: '🚗',
-        items: [
-          { title: '方案A：自驾', desc: '丽江 → 攀枝花 → 成都，约 900km，10h（山路多）' },
-          { title: '方案B：飞机 ✈️', desc: '丽江→成都航班 1.5h，推荐！省时省力' },
-          { title: '方案C：高铁', desc: '丽江→昆明→成都，约 6h' }
-        ]
-      },
-      hotel: {
-        icon: '🏨',
-        items: [
-          { title: '推荐住宿', desc: '成都博舍（太古里旁，设计感十足）' },
-          { title: '备选', desc: '成都群光君悦酒店 · 春熙路' }
-        ]
-      },
-      food: {
-        icon: '🍜',
-        items: [
-          { title: '晚餐', desc: '🔥 火锅！小龙坎 / 大龙燚 / 蜀大侠' },
-          { title: '宵夜', desc: '兔头 · 串串香 · 冰粉' }
-        ]
-      },
-      play: {
-        icon: '🎯',
-        items: [
-          { title: '下午', desc: '抵达成都，入住酒店' },
-          { title: '晚上', desc: '春熙路 · 太古里 · IFS爬楼大熊猫打卡' }
-        ]
-      }
+    drive: {
+      icon: '🚗',
+      items: [
+        { title: '今日市内', desc: '无长途驾驶' }
+      ]
+    },
+    play: {
+      icon: '🎯',
+      items: [
+        { title: '10.3', desc: `春熙路→玉林路→宽窄巷子→杜甫草堂→都江堰→青城山，喝大酒！需提前购门票` },{ title: '10.4', desc: `成都自由活动，休整` }
+      ]
+    },
+    food: {
+      icon: '🍜',
+      items: [
+        { title: '10.3', desc: `喝大酒！需提前购门票` }
+      ]
+    }
     }
   },
   {
-    day: 10, date: '10月10日', emoji: '🐼',
-    title: '成都',
-    subtitle: '熊猫·蜀韵·慢生活',
-    pos: { x: 44, y: 12 },
-    size: 'key',
-    routeStop: true,
-    images: ['https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Panda_eating_bamboo_in_Panda_Base.jpg/960px-Panda_eating_bamboo_in_Panda_Base.jpg'],
-    sections: {
-      drive: {
-        icon: '🚗',
-        items: [
-          { title: '今日无长途', desc: '成都市区游玩，推荐地铁+打车' }
-        ]
-      },
-      hotel: {
-        icon: '🏨',
-        items: [
-          { title: '续住', desc: '成都博舍 或 群光君悦' }
-        ]
-      },
-      food: {
-        icon: '🍜',
-        items: [
-          { title: '早餐', desc: '担担面 · 钟水饺 · 赖汤圆' },
-          { title: '午餐', desc: '夫妻肺片 · 回锅肉 · 麻婆豆腐' },
-          { title: '下午茶', desc: '人民公园·鹤鸣茶社 · 盖碗茶' },
-          { title: '晚餐', desc: '串串香（推荐：冒椒火辣） · 甜水面' }
-        ]
-      },
-      play: {
-        icon: '🎯',
-        items: [
-          { title: '上午', desc: '大熊猫繁育研究基地（建议早7:30到）' },
-          { title: '中午', desc: '宽窄巷子 · 井巷子（比宽巷子更有味道）' },
-          { title: '下午', desc: '人民公园·鹤鸣茶社 · 掏耳朵体验' },
-          { title: '晚上', desc: '锦里古街 · 川剧变脸表演' }
-        ]
-      }
-    }
-  },
-  {
-    day: 11, date: '10月11日', emoji: '🌆',
-    title: '成都 → 重庆',
-    subtitle: '驶向魔幻8D山城',
-    pos: { x: 60, y: 20 },
+    day: 11,
+    dates: '10.5',
+    emoji: '🛣️',
+    title: '成都 → 河池',
+    subtitle: '穿越黔桂',
+    pos: { x: 58, y: 22 },
     size: '',
     routeStop: true,
     images: ['https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Hongya_Cave_20180520.jpg/960px-Hongya_Cave_20180520.jpg'],
     sections: {
-      drive: {
-        icon: '🚗',
-        items: [
-          { title: '行程', desc: '成都 → 渝蓉高速 → 重庆解放碑' },
-          { title: '里程 & 时间', desc: '约 300km，3.5 小时' }
-        ]
-      },
-      hotel: {
-        icon: '🏨',
-        items: [
-          { title: '推荐住宿', desc: '重庆来福士洲际酒店 · 云端体验' },
-          { title: '备选', desc: '重庆解放碑威斯汀酒店' }
-        ]
-      },
-      food: {
-        icon: '🍜',
-        items: [
-          { title: '午餐', desc: '路上服务区简餐' },
-          { title: '晚餐', desc: '🔥 重庆老火锅（推荐：佩姐 / 周师兄）' },
-          { title: '宵夜', desc: '小面 · 酸辣粉 · 山城啤酒' }
-        ]
-      },
-      play: {
-        icon: '🎯',
-        items: [
-          { title: '下午', desc: '抵达重庆 · 入住来福士' },
-          { title: '傍晚', desc: '解放碑步行街 · 八一好吃街' },
-          { title: '晚上', desc: '✨ 洪崖洞夜景（现实版千与千寻）' }
-        ]
-      }
+    drive: {
+      icon: '🚗',
+      items: [
+        { title: '10.5', desc: '成都 → 河池 (9:00出发) | 里程：1036km/11h | 预计抵达：22:00' }
+      ]
+    },
+    play: {
+      icon: '🎯',
+      items: [
+        { title: '10.5', desc: `长途奔袭，河池喝酒，广西公文包！住河池大酒店(406元)` }
+      ]
+    },
+    food: {
+      icon: '🍜',
+      items: [
+        { title: '10.5', desc: `河池喝酒；广西公文包！住河池大酒店(406元)` }
+      ]
+    }
     }
   },
   {
-    day: 12, date: '10月12日', emoji: '🏙️',
-    title: '重庆',
-    subtitle: '魔幻山城一日探秘',
-    pos: { x: 66, y: 26 },
-    size: 'key',
+    day: 12,
+    dates: '10.6-10.7',
+    emoji: '🏠',
+    title: '河池 → 广州 → 深圳',
+    subtitle: '归途',
+    pos: { x: 82, y: 58 },
+    size: '',
     routeStop: true,
     images: ['https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Skyline_of_Chongqing%2C_Aug_2016.jpg/960px-Skyline_of_Chongqing%2C_Aug_2016.jpg'],
     sections: {
-      drive: {
-        icon: '🚗',
-        items: [
-          { title: '今日建议', desc: '重庆地形复杂，建议轻轨+步行，比开车方便' },
-          { title: '体验', desc: '李子坝轻轨穿楼 · 皇冠大扶梯' }
-        ]
-      },
-      hotel: {
-        icon: '🏨',
-        items: [
-          { title: '续住', desc: '重庆来福士洲际酒店' }
-        ]
-      },
-      food: {
-        icon: '🍜',
-        items: [
-          { title: '早餐', desc: '豌杂面 · 重庆小面（推荐：花市豌杂）' },
-          { title: '午餐', desc: '豆花饭 · 辣子鸡 · 毛血旺' },
-          { title: '晚餐', desc: '烤鱼 · 江湖菜 · 冰汤圆' }
-        ]
-      },
-      play: {
-        icon: '🎯',
-        items: [
-          { title: '上午', desc: '李子坝轻轨穿楼 → 鹅岭二厂（《从你的全世界路过》取景地）' },
-          { title: '中午', desc: '磁器口古镇（陈麻花·毛血旺）' },
-          { title: '下午', desc: '山城步道·第三步道 · 长江索道' },
-          { title: '傍晚', desc: '南山一棵树观景台 · 重庆全景日落' },
-          { title: '晚上', desc: '南滨路夜景 · 来福士空中连廊' }
-        ]
-      }
+    drive: {
+      icon: '🚗',
+      items: [
+        { title: '10.6', desc: '河池 → 广州 (9:00出发) | 里程：595km/6.5h | 预计抵达：22:00' },{ title: '10.7', desc: '广州 → 深圳 | 里程：152km' }
+      ]
+    },
+    play: {
+      icon: '🎯',
+      items: [
+        { title: '10.6', desc: `预留堵车，到广州喝酒。住佛山顺德ALSO汉庭(366元)` },{ title: '10.7', desc: `广州吃喝，视情况回深圳` }
+      ]
+    },
+    food: {
+      icon: '🍜',
+      items: [
+        { title: '10.6', desc: `到广州喝酒。住佛山顺德ALSO汉庭(366元)` },{ title: '10.7', desc: `广州吃喝` }
+      ]
     }
-  },
-  {
-    day: 13, date: '10月13日', emoji: '🏠',
-    title: '重庆 → 深圳',
-    subtitle: '返程，满载回忆而归',
-    pos: { x: 75, y: 55 },
-    size: '',
-    routeStop: false,
-    images: ['https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Shenzhen_Skyline_At_Night_%28214551663%29.jpeg/960px-Shenzhen_Skyline_At_Night_%28214551663%29.jpeg'],
-    sections: {
-      drive: {
-        icon: '🚗',
-        items: [
-          { title: '行程概览', desc: '重庆 → 包茂高速 → 广深高速 → 深圳' },
-          { title: '里程 & 时间', desc: '约 1300km，预计 13-14 小时（高强度！）' },
-          { title: '⚠️ 重要提示', desc: '建议凌晨5点出发，两人轮换驾驶，途中至少休息3次' },
-          { title: '备选方案', desc: '也可重庆→桂林→深圳分两天开，中途住桂林' }
-        ]
-      },
-      hotel: {
-        icon: '🏨',
-        items: [
-          { title: '今晚', desc: '🏠 温馨的家！回到深圳，好好休息' },
-          { title: '备选', desc: '如果太累，可中途在桂林/贺州住一晚' }
-        ]
-      },
-      food: {
-        icon: '🍜',
-        items: [
-          { title: '路上', desc: '服务区美食 / 自带干粮' },
-          { title: '抵达后', desc: '🎉 深圳海鲜大餐庆祝完成壮举！' }
-        ]
-      },
-      play: {
-        icon: '🎯',
-        items: [
-          { title: '沿途', desc: '感受从山城→平原→沿海的风景变换' },
-          { title: '抵达', desc: '回到深圳，结束这趟 epic 公路旅行！' }
-        ]
-      }
     }
   }
 ];
@@ -1085,8 +920,8 @@ function buildModalHTML(index) {
       <div class="section-grid">
   `;
 
-  const icons = { drive: '🚗', hotel: '🏨', food: '🍜', play: '🎯' };
-  const labels = { drive: '🚗 开车', hotel: '🏨 酒店', food: '🍜 美食', play: '🎯 游玩' };
+  const icons = { drive: '🚗', hotel: '🏨', food: '🍜', play: '🎮', tickets: '🎫', notes: '📝' };
+  const labels = { drive: '🚗 开车', hotel: '🏨 酒店', food: '🍜 美食', play: '🎮 游玩', tickets: '🎫 门票', notes: '📝 备注' };
 
   for (const [key, section] of Object.entries(d.sections)) {
     html += `<div class="info-card">
