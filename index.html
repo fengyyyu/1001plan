@@ -131,13 +131,10 @@ body {
 }
 .map-bg {
   position: absolute; inset: 0;
-  background: url('网页封面.jpg') center center / cover no-repeat;
-}
-.map-bg::after {
-  content: '';
-  position: absolute; inset: 0;
-  background: rgba(11,14,26,0.7);
-  backdrop-filter: blur(2px);
+  background: 
+    radial-gradient(ellipse at 30% 70%, rgba(245,158,11,0.04) 0%, transparent 60%),
+    radial-gradient(ellipse at 70% 30%, rgba(239,68,68,0.03) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 50%, rgba(59,130,246,0.02) 0%, transparent 50%);
 }
 .map-grid {
   position: absolute; inset: 0;
@@ -148,9 +145,14 @@ body {
 }
 
 /* ===== SVG Path ===== */
-.route-svg {
+.province-svg {
   position: absolute; inset: 0; width: 100%; height: 100%;
   z-index: 1;
+  pointer-events: none;
+}
+.route-svg {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  z-index: 2;
   pointer-events: none;
 }
 
@@ -430,6 +432,16 @@ body {
 <div class="map-container">
   <div class="map-bg"></div>
   <div class="map-grid"></div>
+  
+  <!-- Province boundaries -->
+  <svg class="province-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <path d="M68,55 Q75,52 82,50 L95,55 L100,55 L100,95 L90,100 L75,85 L68,80 Q65,70 68,55Z" fill="rgba(168,216,234,0.2)" stroke="rgba(168,216,234,0.35)" stroke-width="0.3"/>
+    <path d="M55,55 L68,55 Q65,70 68,80 L65,90 L58,95 L50,100 L42,95 L38,82 L40,70 Q42,60 55,55Z" fill="rgba(181,230,195,0.2)" stroke="rgba(181,230,195,0.35)" stroke-width="0.3"/>
+    <path d="M5,30 Q15,28 25,30 L40,35 L42,50 L40,70 L38,82 L42,95 L35,100 L20,100 L8,95 L2,85 L2,50 Q3,40 5,30Z" fill="rgba(245,214,184,0.2)" stroke="rgba(245,214,184,0.35)" stroke-width="0.3"/>
+    <path d="M40,35 L55,35 L55,55 L42,60 L40,50 Q38,42 40,35Z" fill="rgba(212,197,232,0.2)" stroke="rgba(212,197,232,0.35)" stroke-width="0.3"/>
+    <path d="M15,5 L35,5 L50,8 L58,15 L55,35 L40,35 Q25,30 15,28 Q8,22 10,12Z" fill="rgba(248,224,181,0.2)" stroke="rgba(248,224,181,0.35)" stroke-width="0.3"/>
+    <path d="M50,8 L60,5 L72,10 L70,22 L58,20 L55,15 Q52,10 50,8Z" fill="rgba(245,198,198,0.2)" stroke="rgba(245,198,198,0.35)" stroke-width="0.3"/>
+  </svg>
   
   <!-- SVG Route -->
   <svg class="route-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
