@@ -131,10 +131,13 @@ body {
 }
 .map-bg {
   position: absolute; inset: 0;
-  background: 
-    radial-gradient(ellipse at 30% 70%, rgba(245,158,11,0.04) 0%, transparent 60%),
-    radial-gradient(ellipse at 70% 30%, rgba(239,68,68,0.03) 0%, transparent 50%),
-    radial-gradient(ellipse at 50% 50%, rgba(59,130,246,0.02) 0%, transparent 50%);
+  background: url('网页封面.jpg') center center / cover no-repeat;
+}
+.map-bg::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: rgba(11,14,26,0.7);
+  backdrop-filter: blur(2px);
 }
 .map-grid {
   position: absolute; inset: 0;
